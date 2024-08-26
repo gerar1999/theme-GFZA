@@ -1,0 +1,290 @@
+/* Styles pour le container */
+.padding-bottom-80 {
+    padding-bottom: 80px;
+    padding-top: 50px;
+}
+
+/* Styles pour le titre */
+.title-margin {
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+
+/* Styles pour le paragraphe */
+.paragraph-margin {
+    margin-bottom: 50px;
+}
+
+/* Styles pour le bouton */
+.button-margin {
+    margin-top: 20px;
+}
+
+/* Styles pour l'image container (col-md-6 avec margin-top) */
+.image-container {
+    margin-top: 50px;
+}
+
+/* Styles pour la section */
+.section-background {
+    padding-top: 200px;
+    margin-bottom: 25px;
+    background-image: url("/theme_GZ/static/src/img/igris.svg");
+    background-position: bottom;
+    background-size: 100% auto;
+    background-repeat: no-repeat no-repeat;
+    padding-bottom: 125px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Styles pour les titres des sections */
+.section-title {
+    margin-top: 20px;
+}
+
+/* Styles pour les textes des sections */
+.section-text {
+    margin-top: 10px;
+}
+
+/* Styles spécifiques pour les icônes */
+.register-icon {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    width: 70px; /* Ajustez la taille si nécessaire */
+                    height: 70px; /* Ajustez la taille si nécessaire */
+                    font-size: 25px; /* Taille de l'icône */
+                    color: white; /* Couleur de l'icône */
+                    margin: 0 auto; /* Centre l'icône horizontalement */
+}
+
+.pay-icon {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    width: 70px; /* Ajustez la taille si nécessaire */
+                    height: 70px; /* Ajustez la taille si nécessaire */
+                    font-size: 30px; /* Taille de l'icône */
+                    color: white; /* Couleur de l'icône */
+                    margin: 0 auto; /* Centre l'icône horizontalement */
+}
+
+.start-icon {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    width: 70px; /* Ajustez la taille si nécessaire */
+                    height: 70px; /* Ajustez la taille si nécessaire */
+                    font-size: 25px; /* Taille de l'icône */
+                    color: white; /* Couleur de l'icône */
+                    margin: 0 auto; /* Centre l'icône horizontalement */
+}
+
+/* Styles pour la section */
+.section-spacing {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding-bottom: 50px;
+}
+
+/* Styles pour le titre de la section */
+.section-heading {
+    /* Vous pouvez ajouter des styles supplémentaires pour le titre ici si nécessaire */
+}
+
+
+
+
+
+
+                    .r {
+                    background-color: #B22222; /* Couleur de fond pour "Register" */
+                    }
+
+                    .p {
+                    background-color: #4F4F4F /* Couleur de fond pour "Pay" */
+                    }
+
+                    .s {
+                    background-color: green; /* Couleur de fond pour "Start" */
+                    }
+                    /* Styles pour l'animation */
+                    .fade-in {
+                    opacity: 0;
+                    transform: translateY(40px); /* Pour créer un effet de montée */
+                    transition: opacity 1s ease-out, transform 0.6s ease-out;
+                    }
+
+                    /* Classe ajoutée lors de l'animation */
+                    .fade-in.visible {
+                    opacity: 1;
+                    transform: translateY(0);
+                    }
+
+                    .service-card {
+                    display: block;
+                    text-decoration: none;
+                    color: #333;
+                    border: 1px solid #ddd;
+                    border-radius: .50rem;
+                    overflow: hidden;
+                    transition: all 0.3s ease;
+                    margin-bottom: 1rem;
+                    padding: 1rem;
+                    text-align: center;
+                    }
+                    .service-card:hover {
+                    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.5);
+                    transform: translateY(-5px);
+                    }
+                    .service-card h3 {
+                    font-size: 1.25rem;
+                    }
+                    .service-card p {
+                    font-size: 1rem;
+                    }
+                    /* Styles pour le conteneur du carrousel */
+.carousel-container {
+    padding: 40px;
+}
+   .cas{
+   padding: 70px
+}
+
+
+
+ /* Styles pour le conteneur du carrousel */
+
+
+                       .carousel-image {
+
+                        max-height: 99px;
+                        max-width: 684px;
+                        border: 1px solid rgba(0, 0, 0, 0.125);
+                        border-radius: 8px;
+                        padding: 18px;
+
+                       }
+
+
+ .cont {
+display: flex;
+justify-content: space-between;
+       }
+
+
+
+    .card {
+
+
+    margin: 20px;
+    padding: 50px;
+    width: 600px; /* Largeur ajustée pour les images de haute qualité */
+    background-color: #ffffff; /* Fond blanc */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Ombre */
+    transition: 0.3s;
+    border-radius: 10px; /* Arrondi */
+    position: relative; /* Position relative pour le déplacement */
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* Ombre plus prononcée au hover */
+}
+
+.card img {
+    width: 100%;
+    height: 300px; /* Hauteur ajustée pour les images de haute qualité */
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card .badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #ff0000; /* Rouge */
+    color: #ffffff; /* Blanc */
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.card h2.bodoni {
+    font-family: 'Bodoni Moda', serif;
+    margin-top: 0;
+    color: #008000; /* Vert */
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.card ul li {
+    margin-bottom: 10px;
+}
+
+.learn-more-button {
+    background-color: #ff0000; /* Rouge */
+    color: #ffffff; /* Blanc */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50%; /* Bouton rond par défaut */
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.learn-more-button .learn-more-text {
+    display: none; /* Texte caché par défaut */
+}
+
+.learn-more-button:hover {
+    padding: 10px 30px; /* Ajuster la largeur pour afficher le texte */
+    border-radius: 10px; /* Bords arrondis au hover */
+    width: auto; /* Largeur automatique pour ajuster le contenu */
+}
+
+.learn-more-button:hover .learn-more-text {
+    display: inline-block; /* Texte visible au hover */
+    margin-right: 10px; /* Espacement entre le texte et l'icône */
+}
+
+.learn-more-button:hover i {
+    margin-left: 10px; /* Espacement entre l'icône et le bord droit */
+}
+
+.learn-more-button:hover {
+    background-color: #ff3333; /* Rouge clair au hover */
+}
+
+/* Aligner le texte et la flèche */
+.learn-more-button:hover {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.padc{
+padding: 70px;
+}
+                    /* Styles pour le carrousel
+                    .img-fluid{
+                    max-width: 100%;
+                    height: auto
+                    }
+                    .i-card{
+                    border: 1px solid rgba(0, 0, 0, 0.125);
+                    border-radius: 0.25rem
+                    }

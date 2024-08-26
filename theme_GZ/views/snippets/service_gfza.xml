@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="service_gfza" name="Service GFZA">
+        <section class="service-gz">
+
+            <div class="container row conta">
+                <div class="col-md-4 mb-4">
+
+                    <div class="card" onmouseover="moveCard(this)">
+
+                        <div class="badge">AI Machine Learning</div>
+                        <img src="https://via.placeholder.com/600x300" alt="Amazon Rekognition" id="rekognition-image"/>
+                        <h2 class="bodoni">Amazon Rekognition – Face Matching</h2>
+                        <p>Identify and analyze faces in images and videos.</p>
+
+                        <a href="https://www.example.com" class="learn-more-button-link">
+                            <button class="learn-more-button">
+                                <span class="learn-more-text">Learn More</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <script>
+            function moveCard(card) {
+            // Générer des valeurs aléatoires pour le mouvement
+            const randomX = (Math.random() - 0.5) * 30; // Déplacement horizontal
+            const randomY = (Math.random() - 0.5) * 30; // Déplacement vertical
+
+            // Appliquer le déplacement
+            card.style.transform = `translate(${randomX}px, ${randomY}px)`;
+
+            // Réinitialiser le mouvement après un court délai
+            setTimeout(() => {
+            card.style.transform = 'translate(0, 0)';
+            }, 300); // Réinitialise après 300ms
+            }
+        </script>
+    </template>
+
+
+</odoo>

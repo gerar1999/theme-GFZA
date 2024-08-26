@@ -1,0 +1,189 @@
+<odoo>
+    <template id="custom_homepage" inherit_id="website.homepage" name="Home">
+        <xpath expr="//t[@t-call='website.layout']" position="replace">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+                  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+                  crossorigin="anonymous"/>
+
+            <t t-call="website.layout">
+                <t t-set="pageName" t-value="'homepage'"/>
+                <div class="oe_structure"/>
+
+
+                <div>
+                    <div class="container padding-bottom-80">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h1 class="title-margin">About GFZA SW</h1>
+                                <p class="paragraph-margin">
+                                    The GFZA Single Window System aims to promote private investments and firm growth
+                                    in non-resource-based sectors, thereby improving the enabling business environment,
+                                    investment attraction capacity, and the quality infrastructure support system for
+                                    companies that want to invest and grow their businesses in Ghana.
+                                </p>
+                                <a href="/contact" class="btn btn-danger button-margin">Contact Us</a>
+                            </div>
+                            <div class="col-md-6 image-container">
+                                <img src="/theme_GZ/static/src/img/imgh1.svg" alt="GFZA Image" class="img-fluid"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <section class="service-gz o_colored_level" data-snippet="service_gfza" data-name="Service GFZA"
+                             style="background-image: none;">
+
+                        <div class="container cont">
+
+                            <div class="row">
+                                <div class="col-md-6">
+
+                                    <div class="card" onmouseover="moveCard(this)">
+
+                                        <div class="badge o_default_snippet_text">AI Machine Learning</div>
+                                        <img src="https://via.placeholder.com/600x300" alt="Amazon Rekognition"
+                                             id="rekognition-image" loading="lazy"/>
+                                        <h2 class="bodoni o_default_snippet_text">Amazon Rekognition – Face Matching
+                                        </h2>
+                                        <p class="o_default_snippet_text">Identify and analyze faces in images and
+                                            videos.
+                                        </p>
+
+                                        <a href="https://www.example.com" class="learn-more-button-link">
+                                            <button class="learn-more-button">
+                                                <span class="learn-more-text o_default_snippet_text">Learn More</span>
+                                                <i class="fas fa-arrow-right"/>
+                                            </button>
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+
+
+                    <!-- New Section -->
+                    <div class="row section-background">
+                        <!-- Register Section -->
+                        <div class="col-md-4 text-center fade-in">
+                            <div class="register-icon r">
+                                <i class="fa fa-2x fa-wpforms"></i>
+                            </div>
+                            <h2 class="section-title">Register</h2>
+                            <p class="section-text">
+                                Register your company on the GFZA Single Window System by creating a login account and
+                                password.
+                            </p>
+                        </div>
+
+                        <!-- Pay Section -->
+                        <div class="col-md-4 text-center fade-in">
+                            <div class="pay-icon p">
+                                <i class="fa-regular fa-money-bill-1"></i>
+                            </div>
+                            <h2 class="section-title">Pay</h2>
+                            <p class="section-text">
+                                Pay for the License Application Form, fill out the form and submit.
+                            </p>
+                        </div>
+
+                        <!-- Start Section -->
+                        <div class="col-md-4 text-center fade-in">
+                            <div class="start-icon s">
+                                <i class="fa fa-2x fa-check"></i>
+                            </div>
+                            <h2 class="section-title">Start</h2>
+                            <p class="section-text">
+                                Get your license after paying for the Initial License Fee upon approval of the license
+                                application.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Partner Agencies & Stakeholders Section -->
+                    <div class="row section-spacing">
+                        <div class="col-12 text-center">
+                            <h1 class="section-heading">Partner Agencies et Stakeholders</h1>
+                        </div>
+                    </div>
+
+                    <div class="cas">
+                        <div class="owl-carousel">
+
+                            <div>
+                                <img src="/theme_GZ/static/src/img/1.png" alt="Agency 1" loading="lazy"
+                                     class="img-fluid carousel-image"/>
+                            </div>
+                            <div>
+                                <img src="/theme_GZ/static/src/img/2.png" alt="Agency 2" loading="lazy"
+                                     class="img-fluid carousel-image"/>
+                            </div>
+                            <div>
+                                <img src="/theme_GZ/static/src/img/3.png" alt="Agency 3" loading="lazy"
+                                     class="img-fluid carousel-image"/>
+                            </div>
+                            <div>
+                                <img src="/theme_GZ/static/src/img/4.png" alt="Agency 4" loading="lazy"
+                                     class="img-fluid carousel-image"/>
+                            </div>
+                            <div>
+                                <img src="/theme_GZ/static/src/img/5.png" alt="Agency 8" loading="lazy"
+                                     class="img-fluid carousel-image"/>
+                            </div>
+                            <div>
+                                <img src="/theme_GZ/static/src/img/6.png" loading="lazy" alt="Agency 12"
+                                     class="img-fluid carousel-image"/>
+                            </div>
+
+                        </div>
+                        <!-- Add more slides as needed -->
+
+                    </div>
+
+
+                </div>
+                <!-- Inclure le script JavaScript directement dans le template -->
+                <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                    const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target); // Stop observing once the element is visible
+                    }
+                    });
+                    }, { threshold: 0.5 }); // Threshold of 0.1 means the element needs to be 10% visible
+
+                    document.querySelectorAll('.fade-in').forEach(element => {
+                    observer.observe(element);
+                    });
+                    });
+                </script>
+
+                <script>
+                    function moveCard(card) {
+                    // Générer des valeurs aléatoires pour le mouvement
+                    const randomX = (Math.random() - 0.5) * 30; // Déplacement horizontal
+                    const randomY = (Math.random() - 0.5) * 30; // Déplacement vertical
+
+                    // Appliquer le déplacement
+                    card.style.transform = `translate(${randomX}px, ${randomY}px)`;
+
+                    // Réinitialiser le mouvement après un court délai
+                    setTimeout(() => {
+                    card.style.transform = 'translate(0, 0)';
+                    }, 300); // Réinitialise après 300ms
+                    }
+                </script>
+
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+                        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+                        crossorigin="anonymous"></script>
+
+
+            </t>
+        </xpath>
+    </template>
+</odoo>

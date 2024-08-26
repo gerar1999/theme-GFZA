@@ -1,0 +1,87 @@
+ .footer {
+    width: 100%;
+    background-color: #28a745; /* Couleur de fond, remplacez par la couleur désirée */
+    color: #fff; /* Couleur du texte, remplacez par la couleur désirée */
+    box-sizing: border-box; /* Assure que padding et border sont inclus dans la largeur */
+    position: relative; /* Assurez-vous que le footer est positionné correctement */
+    padding-left:40px;
+    padding-right:40px;
+    padding-bottom:0px;
+}
+.additional-links {
+    text-align: right; /* Aligne les liens à droite */
+    margin-top: 80px; /* Ajoute un espace au-dessus des liens */
+
+}
+
+.about-gfza-image {
+    padding-top: 100px; /* Espace au-dessus de l'image */
+    padding-bottom: 100px;
+    max-width: 100%; /* S'assure que l'image ne dépasse pas la largeur de son conteneur */
+    height: auto; /* Maintient les proportions de l'image */
+}
+/* Conteneur principal */
+.help-container {
+   padding-top: 50px
+}
+
+/* Styles pour le titre de la section d'aide */
+.help-title {
+    /* Ajoutez des styles pour le titre ici si nécessaire */
+}
+
+/* Styles pour le lien dans la section d'aide */
+.help-link {
+    color: white;
+}
+
+
+
+/* Styles pour le titre de la section de contact */
+.contact-title {
+    /* Ajoutez des styles pour le titre ici si nécessaire */
+}
+
+/* Styles pour l'adresse de contact */
+.contact-address {
+    /* Ajoutez des styles pour l'adresse ici si nécessaire */
+}
+
+/* Styles pour le numéro de téléphone de contact */
+.contact-phone {
+    /* Ajoutez des styles pour le téléphone ici si nécessaire */
+}
+
+/* Styles pour le lien email de contact */
+.contact-email {
+    /* Ajoutez des styles pour le lien email ici si nécessaire */
+}
+
+.contact-link {
+    color: white;
+}
+
+
+
+.additional-link1 {
+    color: white;
+}
+.additional-link2 {
+    color: white;
+}
+
+.separator {
+    color: white;
+}
+
+/* Styles pour le pied de page */
+.foot {
+    padding: 0px;
+    text-align: left;
+
+}
+
+.footer-text {
+    /* Ajoutez des styles pour le texte du pied de page ici si nécessaire */
+}
+

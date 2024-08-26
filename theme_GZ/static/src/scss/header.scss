@@ -1,0 +1,82 @@
+  /* styles.css top_bar */
+
+
+                     .bord{
+
+                     padding-right: 70px;
+                     padding-left: 70px;
+                     padding-top: 0px;
+                     padding-bottom: 0px;
+
+                     }
+
+                    .separator{
+                    border: none;
+                    border-top: 2px solid #dcdcdc; /* Gris argenté */
+                    margin: 0;
+                    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3); /* Légère ombre pour un effet subtil */
+
+                    }
+                    .bord1{
+                    padding-right: 70px;
+                     padding-left: 70px;
+                    }
+                    .text-red {
+                    color: #c21f27;
+                    }
+                    .fab{
+                    color:#c21f27;
+                     font-size: inherit;
+                    }
+
+
+                    .icon-phone {
+                    color: black;
+                    }
+
+                    .icon-envelope {
+                    color: black;
+                    }
+
+
+                    /* styles.css navbar */
+
+                    .logo-image {
+                    height: 2.5rem;
+                    }
+                    .sign{
+                    margin-top: 8px;
+                     margin-bottom: 8px;
+                    }
+
+                    .registration-btn {
+                    border-radius: 5px;
+                     color: #ffffff !important;
+                     margin-top: 8px;
+                     margin-bottom: 8px;
+                    }
+
+                    /* styles carrousel */
+
+                    /* Assurez-vous que le conteneur du carrousel est positionné relativement */
+                    .carousel-item {
+                    position: relative;
+
+
+                    }
+
+                    /* Centrer le texte des légendes du carrousel */
+                    .carousel-caption {
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    text-align: center;
+                    color: #fff; /* Vous pouvez changer la couleur en fonction de votre design */
+                    }
+
+                    .carousel-caption h5, .carousel-caption p {
+                    margin-bottom: 0;
+                    }
+
+

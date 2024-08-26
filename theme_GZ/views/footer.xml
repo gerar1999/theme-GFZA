@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="custom_footer" inherit_id="website.layout" name="Pied de page personnalisé">
+        <xpath expr="//footer" position="replace">
+            <footer class="footer">
+
+               <div class="help-container">
+    <div class="row">
+        <div class="col-lg-5">
+            <h5 class="help-title">How can we help?</h5>
+            <ul class="list-unstyled">
+                <li>
+                    <a href="#" class="help-link">About GFZA</a>
+                </li>
+            </ul>
+            <!-- Ajout de l'image avec espace suffisant -->
+            <img src="/theme_gfza/static/src/img/fmg.png" alt="GFZA Image" class="about-gfza-image"/>
+        </div>
+        <div class="col-lg-7">
+            <h5 class="contact-title">Contact us</h5>
+            <p class="contact-address">
+                5th Link Rd, East Cantonments (Near US Embassy)
+                <br/>
+                Accra, Ghana, P.O.Box M626.
+            </p>
+            <p class="contact-phone">Telephone: +233 302 780535 / 785037 / 428620</p>
+            <p class="contact-email">Send us a message:
+                <a href="mailto:info@gfza.gov.gh" class="contact-link">info@gfza.gov.gh</a>
+            </p>
+            <div class="additional-links">
+                <a href="#" class="additional-link1">Terms of Services</a>
+                <span class="separator">.</span>
+                <a href="#" class="additional-link2">Privacy Policy</a>
+            </div>
+        </div>
+    </div>
+    <div class="foot">
+        <p class="footer-text">Copyright © GFZA</p>
+    </div>
+</div>
+
+            </footer>
+        </xpath>
+    </template>
+</odoo>
